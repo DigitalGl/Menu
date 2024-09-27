@@ -48,16 +48,15 @@ h2 {
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .menu-item img {
     width: 450px;
     height: 400px;
     object-fit: cover;
-    margin-right: 20px;
+    margin-bottom: 15px;
     border-radius: 8px;
     border: 2px solid #ff6347;
 }
@@ -74,6 +73,7 @@ h2 {
 .menu-item span {
     font-weight: bold;
     color: #ff6347;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -82,4 +82,49 @@ footer {
     background-color: #333;
     color: white;
     margin-top: 20px;
+}
+
+/* Мобильная адаптация для Samsung Galaxy A7 (2018) */
+@media (max-width: 1080px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-item img {
+        width: 100%;
+        /* Изображения будут занимать всю ширину экрана */
+        height: auto;
+        /* Автоматическая высота для правильного соотношения сторон */
+    }
+
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item p,
+    .menu-item span {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1rem;
+        padding: 15px;
+    }
 }
